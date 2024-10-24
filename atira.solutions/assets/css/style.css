@@ -545,7 +545,24 @@ body {
     border-radius: var(--radius-5);
     overflow: hidden;
     margin-block-end: 25px;
+    width: 100%;
+    max-width: 100%; /* Ensures the banner doesn't exceed its container width */
 }
+
+@media (max-width: 768px) {
+    .about-banner {
+        margin-block-end: 15px; /* Reduces margin for smaller screens */
+        border-radius: var(--radius-3); /* Adjusts border radius for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-banner {
+        margin-block-end: 10px; /* Further reduces margin for very small screens */
+        border-radius: var(--radius-2); /* Smaller border radius for very small screens */
+    }
+}
+
 
 .play-btn {
     position: absolute;
