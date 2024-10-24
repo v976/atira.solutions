@@ -1442,7 +1442,7 @@ textarea.input-field {
     display: flex;
     gap: 60px;
     /* Space between the brand logos */
-    animation: slide infinite linear 25s;
+    animation: slide infinite linear 5s;
     /* Adjust the duration for speed */
 }
 
